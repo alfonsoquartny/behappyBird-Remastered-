@@ -16,7 +16,7 @@ public class flyMov : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0)||Input.touchCount>1)
         {
             rb.velocity = Vector2.up * velocity;
         }
