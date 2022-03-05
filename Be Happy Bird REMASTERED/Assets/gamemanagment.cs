@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class pipeSpawner : MonoBehaviour
+public class gamemanagment : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -14,5 +15,10 @@ public class pipeSpawner : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void Play()
+    {
+        SceneManager.LoadScene(0);
     }
 }
